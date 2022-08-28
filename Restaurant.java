@@ -23,7 +23,7 @@ public class Restaurant {
     }
 
     private LocalDateTime toDateTime(String dateTimeString) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
         return LocalDateTime.parse(dateTimeString, formatter);
     }
 
