@@ -15,9 +15,9 @@ String[] extractInformationFromInput(String input){
             output[1]= extractDate(stringArr[i], stringArr[i+1]);
         }
         
-        if (stringArr[i].contains(":") && !stringArr[i+2].contains("abends,")){
+        if (stringArr[i].contains(":") && !stringArr[i+2].contains("abends")){
             output[2] = stringArr[i];
-        }else if (stringArr[i+1].contains("Uhr") && stringArr[i+2].contains("abends,")){
+        }else if (stringArr[i+1].contains("Uhr") && stringArr[i+2].contains("abends")){
             output[2] = extractTime(stringArr[i]);
         }
 

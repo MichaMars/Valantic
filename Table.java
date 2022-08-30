@@ -31,7 +31,7 @@ public class Table {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("Table: %d - MAX: %d\n", tableNo, maxGuests));
+        sb.append(String.format("Tisch: %d - Maximale Anzahl an Gästen: %d\n", tableNo, maxGuests));
         reservations.forEach((k, v) -> sb.append(String.format("\tDate: %s.%s.%s %s:%s  :%s\n",
                 k.getDayOfMonth(), k.getMonthValue(),k.getYear(),
                 k.getHour(),k.getMinute(), v)));

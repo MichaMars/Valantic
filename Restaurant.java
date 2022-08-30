@@ -29,7 +29,6 @@ public class Restaurant {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\nRESTAURANT TABLE RESERVATIONS\n");
         for (Table t : tables) {
             sb.append(t);
         }
